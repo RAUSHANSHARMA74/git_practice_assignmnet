@@ -1,5 +1,5 @@
+
 function prime(num){
-    
     let number = 0;
     for(let x=0; x<num; x++){
         if(num % x == 0){
@@ -10,11 +10,9 @@ function prime(num){
         return true
     }
     return false
-}
-
-let ans = prime(13);
-if(ans == true){
-    console.log('prime');
-}else{
-    console.log('NA');
+let answer = prime(13);
+if(answer==true){
+    console.log("This is a Prime Number");
+} else{
+    console.log("This is a not Prime Number");
 }
