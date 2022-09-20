@@ -1,17 +1,23 @@
-function prime(num){
-    let count = 0;
-    for(let x=0; x<num; x++){
-        if(num[x] % x ){
-            count++
-        }
-        return true
-    }
-    return false
+function prime(num)  {
+     
+    let factor = 0;
+    for(let x=1; x<=num; x++){
+        if(num % x==0 ){
+            factor++
+}   
 
 }
-if(count==2){
-    console.log('prime');
+    if(factor==2){
+       return true;
 
-}else{
-    console.log('NA');
+} 
+    return false; 
+    
+}
+
+let answer = prime(13);
+if(answer==true){
+    console.log("This is a Prime Number");
+} else{
+    console.log("This is a not Prime Number");
 }
